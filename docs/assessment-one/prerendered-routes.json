@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/assessment-one": {},
+    "/assessment-one/about": {},
+    "/assessment-one/contact": {},
+    "/assessment-one/home": {},
+    "/assessment-one/portfolio": {}
+  }
+}
