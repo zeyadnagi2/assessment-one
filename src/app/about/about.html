@@ -1,0 +1,24 @@
+<div class="about d-flex justify-content-center align-items-center">
+  <div class="about-inner text-white">
+    <h1 class="fw-bolder text-uppercase text-center">about component</h1>
+
+    <div class="shape">
+      <div class="lines">
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <div class="paragraph container mt-4">
+      <div class="row">
+        @for (item of word; track $index) {
+        <div class="col-sm-12 col-md-6">
+          <div class="inner mx-3 px-2">
+            <p>{{item}}
+            </p>
+          </div>
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+</div>

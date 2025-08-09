@@ -1,0 +1,32 @@
+.home{
+    background-color: #1ABC9C;
+    height: 85vh;
+}
+
+.shape {
+  position: relative;
+}
+
+.lines {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 80px;
+  display: block;
+}
+
+.lines::before {
+  margin-right: 15px;
+}
+
+.lines::after {
+  margin-left: 15px;
+}

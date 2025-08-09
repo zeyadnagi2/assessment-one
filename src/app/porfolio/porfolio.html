@@ -1,0 +1,36 @@
+<div class="portfolio d-flex justify-content-center align-items-center">
+  <div class="portfolio-inner text-center py-4">
+    <h1 class="fw-bolder text-uppercase">portfolio component</h1>
+
+    <div class="shape">
+      <div class="lines">
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <div class="container text-center pt-4">
+      <div class="row">
+        @for (item of image; track $index) {
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="inner-image m-2 border rounded-4 position-relative overflow-hidden"
+              #card
+            >
+              <img [src]="item" class="d-block w-100 border rounded-4" alt="image" />
+
+              @defer (on hover(card)) {
+                <div
+                  class="lay position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center fw-bolder"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              } @placeholder {
+                <div class="placeholder-cover position-absolute top-0 bottom-0 start-0 end-0"></div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.navbar{
+    background-color: #2C3D50;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #19BC9B;
+  color: white !important;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
